@@ -1,37 +1,61 @@
-// DARK MODE
+// DARK MODE FIX
 
-document.getElementById("mode").onclick=function(){
+document.getElementById("modeToggle").onclick=function(){
 
 document.body.classList.toggle("dark");
 
 };
 
 
-// SIMPLE CHART
 
-const canvas=document.getElementById("chart");
+// RESUME KNOWLEDGE BASE
 
-const ctx=canvas.getContext("2d");
+const resumeData={
 
-ctx.fillStyle="#4c6fff";
+experience:"Ulhas has 15+ years experience delivering enterprise SaaS loyalty platforms.",
 
-ctx.fillRect(50,50,80,200);
-ctx.fillRect(150,120,80,130);
-ctx.fillRect(250,90,80,160);
+skills:"Ulhas specializes in loyalty platforms, API validation, enterprise SaaS delivery and AI operations.",
+
+company:"Ulhas worked at Capillary Technologies managing enterprise loyalty solutions.",
+
+role:"Ulhas currently works as Configuration Manager leading SaaS deployments."
+
+};
 
 
-// AI ASSISTANT
 
-document.getElementById("ask").onclick=function(){
+// AI RESPONSE
 
-const q=document.getElementById("question").value;
+document.getElementById("askBtn").onclick=function(){
 
-const box=document.getElementById("chatbox");
+const q=document.getElementById("question").value.toLowerCase();
 
-if(q==="") return;
+const chat=document.getElementById("chatBox");
 
-box.innerHTML+=`<p><b>You:</b> ${q}</p>`;
+chat.innerHTML+=`<p><b>You:</b> ${q}</p>`;
 
-box.innerHTML+=`<p><b>AI:</b> Ulhas has 15+ years experience delivering enterprise loyalty SaaS platforms.</p>`;
+let answer=null;
+
+for(let key in resumeData){
+
+if(q.includes(key)){
+
+answer=resumeData[key];
+
+}
+
+}
+
+if(answer){
+
+chat.innerHTML+=`<p><b>AI:</b> ${answer}</p>`;
+
+}
+
+else{
+
+chat.innerHTML+=`<p><b>AI:</b> Oh ho! Ulhas will personally connect you to answer your query. Stay Tune!</p>`;
+
+}
 
 };
