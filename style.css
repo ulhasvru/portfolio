@@ -1,176 +1,123 @@
 body{
-
 font-family:Inter;
 margin:0;
 background:#f6f9ff;
-
+color:#111;
+transition:0.3s;
 }
 
-.background{
-
-position:fixed;
-width:100%;
-height:100%;
-background:linear-gradient(135deg,#eaf2ff,#ffffff);
-z-index:-1;
-
+.dark{
+background:#0f172a;
+color:white;
 }
 
 .navbar{
-
-display:flex;
-justify-content:space-between;
-padding:20px 80px;
-
-}
-
-.logo{
-
-background:#4c6fff;
-color:white;
-padding:10px;
-border-radius:10px;
-
-}
-
-.nav-links{
-
-display:flex;
-gap:40px;
-list-style:none;
-
-}
-
-.nav-avatar{
-
-width:36px;
-border-radius:50%;
-
-}
-
-.hero{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:100px 80px;
+padding:20px 60px;
+}
 
+.logo{
+font-size:20px;
+font-weight:700;
+background:#4c6fff;
+color:white;
+padding:6px 12px;
+border-radius:8px;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:inherit;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
 }
 
 .hero img{
-
-width:320px;
+width:300px;
 border-radius:20px;
-
 }
 
 .buttons{
-
 margin-top:20px;
-display:flex;
-gap:20px;
-
 }
 
 .btn-primary{
-
 background:#4c6fff;
 color:white;
 padding:12px 24px;
 border-radius:10px;
 text-decoration:none;
-
 }
 
-.btn-secondary{
-
-background:#e9edff;
-padding:12px 24px;
-border-radius:10px;
-
-}
-
-.impact{
-
-padding:80px;
-
-}
-
-canvas{
-
-max-width:600px;
-
+.summary{
+padding:60px;
+max-width:900px;
 }
 
 .expertise{
-
-padding:80px;
-
+padding:60px;
 }
 
 .grid{
-
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-
 }
 
 .card{
-
 background:white;
-padding:25px;
-border-radius:16px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.05);
 }
 
 .timeline{
-
-padding:80px;
-
+padding:60px;
 }
 
 .item{
-
 background:white;
 padding:20px;
-border-radius:16px;
-margin-bottom:20px;
-
+border-radius:12px;
+margin-bottom:15px;
 }
 
 .chat{
-
 max-width:500px;
+padding:20px;
 background:white;
-padding:25px;
-border-radius:16px;
-
+border-radius:12px;
 }
 
 .chat input{
-
 width:100%;
-padding:12px;
+padding:10px;
 margin-top:10px;
-
 }
 
 .chat button{
-
 margin-top:10px;
 background:#4c6fff;
 color:white;
 border:none;
 padding:10px 20px;
 border-radius:8px;
-
 }
 
 footer{
-
 text-align:center;
 padding:30px;
-
 }
