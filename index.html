@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ulhas Suresh Rane | Enterprise SaaS Leader</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ulhas Suresh Rane | AI Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<div class="background"></div>
+
 <nav class="navbar">
 
 <div class="logo">UR</div>
 
-<ul>
-<li>Impact</li>
-<li>Expertise</li>
-<li>Career</li>
-<li>Insights</li>
+<ul class="nav-links">
+
+<li><a href="#impact">Impact</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#career">Career</a></li>
+<li><a href="#ai">AI</a></li>
+
 </ul>
 
+<div class="nav-right">
+
+<button id="mode">🌙</button>
+
 <img src="profile.png" class="nav-avatar">
+
+</div>
 
 </nav>
 
@@ -36,127 +49,99 @@
 
 <h2>Enterprise SaaS Leader</h2>
 
-<p class="subtitle">
-Loyalty Platforms • Product Operations • Customer Success
+<p>
+
+15+ years delivering enterprise loyalty ecosystems and global SaaS deployments.
+
 </p>
 
-<p class="desc">
-15+ years delivering enterprise loyalty ecosystems and scalable customer engagement platforms for global retail brands.
-</p>
+<div class="buttons">
 
-<div class="hero-buttons">
+<a href="resume.pdf" class="btn-primary">Download Resume</a>
 
-<a href="resume.pdf" class="btn-primary">
-Download Resume
-</a>
-
-<a href="#" class="btn-secondary">
-LinkedIn
-</a>
+<a href="#" class="btn-secondary">LinkedIn</a>
 
 </div>
 
 </div>
 
 <div class="hero-right">
+
 <img src="profile.png">
-</div>
-
-</section>
-
-<section class="impact">
-
-<h2>Leadership Impact</h2>
-
-<div class="impact-grid">
-
-<div class="card">
-<h3>15+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="card">
-<h3>10+</h3>
-<p>Enterprise Programs</p>
-</div>
-
-<div class="card">
-<h3>40%</h3>
-<p>Efficiency via AI</p>
-</div>
-
-<div class="card">
-<h3>Enterprise</h3>
-<p>Retail Clients</p>
-</div>
 
 </div>
 
 </section>
 
-<section class="expertise">
+<section id="impact" class="impact">
+
+<h2>Leadership Dashboard</h2>
+
+<canvas id="chart"></canvas>
+
+</section>
+
+<section id="expertise" class="expertise">
 
 <h2>Core Expertise</h2>
 
-<div class="expertise-grid">
+<div class="grid">
 
-<div class="expert-card">
+<div class="card">
+
 <h3>Loyalty Platforms</h3>
-<p>Enterprise loyalty platform implementations and optimization.</p>
+
+<p>Enterprise loyalty architecture delivery.</p>
+
 </div>
 
-<div class="expert-card">
+<div class="card">
+
 <h3>API Validation</h3>
-<p>API lifecycle testing using Postman and enterprise integration frameworks.</p>
+
+<p>Automation and enterprise integrations.</p>
+
 </div>
 
-<div class="expert-card">
+<div class="card">
+
 <h3>Enterprise Delivery</h3>
-<p>Managing delivery pipelines across enterprise SaaS products.</p>
+
+<p>Managing SaaS lifecycle across global teams.</p>
+
 </div>
 
-<div class="expert-card">
-<h3>AI-Driven Operations</h3>
-<p>Driving operational efficiency using automation and AI.</p>
+<div class="card">
+
+<h3>AI Operations</h3>
+
+<p>Automation improving operational efficiency.</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="career">
+<section id="career">
 
-<h2>Career Journey</h2>
+<h2>Career Timeline</h2>
 
 <div class="timeline">
 
-<div class="timeline-item">
+<div class="item">
 
 <h3>Configuration Manager</h3>
 
 <p>Capillary Technologies</p>
 
-<span>2023 – Present</span>
-
 </div>
 
-<div class="timeline-item">
+<div class="item">
 
 <h3>Delivery Manager</h3>
 
 <p>Capillary Technologies</p>
-
-<span>2022 – 2023</span>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>Technical Lead</h3>
-
-<p>Enterprise Loyalty Platform</p>
-
-<span>Earlier Role</span>
 
 </div>
 
@@ -164,15 +149,21 @@ LinkedIn
 
 </section>
 
-<section class="ai-widget">
+<section id="ai">
 
-<h2>AI Chat Assistant</h2>
+<h2>AI Assistant</h2>
 
-<div class="chat-box">
+<div class="chat">
 
-<input placeholder="Ask about Ulhas experience">
+<div id="chatbox">
 
-<button>Ask</button>
+<p>Ask about Ulhas's experience.</p>
+
+</div>
+
+<input id="question" placeholder="Ask something...">
+
+<button id="ask">Ask</button>
 
 </div>
 
