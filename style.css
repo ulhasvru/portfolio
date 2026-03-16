@@ -1,65 +1,171 @@
 body{
-font-family:Poppins;
+
+font-family:Inter;
 margin:0;
 background:#f5f7fb;
-color:#333;
+color:#1f2937;
+
 }
 
-header{
-text-align:center;
-padding:60px;
-background:linear-gradient(135deg,#4f46e5,#06b6d4);
-color:white;
-}
+nav{
 
-header h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.btn{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
 background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+font-size:22px;
+font-weight:700;
+color:#2563eb;
+
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
 color:#333;
-padding:10px 20px;
+
+}
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 10%;
+
+}
+
+.hero-text{
+
+max-width:550px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero h2{
+
+color:#2563eb;
+
+}
+
+.hero-image img{
+
+width:350px;
+border-radius:20px;
+
+}
+
+.buttons{
+
+margin-top:25px;
+
+}
+
+.primary{
+
+background:#2563eb;
+color:white;
+padding:12px 25px;
 border-radius:25px;
 text-decoration:none;
-font-weight:bold;
+
+}
+
+.secondary{
+
+border:1px solid #2563eb;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+color:#2563eb;
+margin-left:10px;
+
 }
 
 section{
-padding:60px 10%;
+
+padding:80px 10%;
+
 }
 
 h2{
+
 text-align:center;
-margin-bottom:40px;
+margin-bottom:50px;
+
+}
+
+.metrics{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+
+}
+
+.metric{
+
+background:white;
+padding:30px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
 }
 
 .grid{
+
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
+
 }
 
 .card{
+
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 4px 20px rgba(0,0,0,0.1);
+border-radius:14px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
 }
 
 .timeline{
-display:grid;
-gap:25px;
+
+border-left:3px solid #2563eb;
+padding-left:25px;
+
 }
 
-ul{
-padding-left:20px;
+.item{
+
+margin-bottom:25px;
+
 }
 
 footer{
+
 text-align:center;
-padding:20px;
-background:#111;
-color:white;
+padding:30px;
+background:#f3f4f6;
+
 }
