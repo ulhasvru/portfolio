@@ -1,33 +1,7 @@
-const counters=document.querySelectorAll(".counter");
+const button = document.querySelector(".chat-box button");
 
-counters.forEach(counter=>{
+button.addEventListener("click", () => {
 
-counter.innerText="0";
-
-const update=()=>{
-
-const target=+counter.getAttribute("data-target");
-
-const current=+counter.innerText;
-
-const increment=target/100;
-
-if(current<target){
-
-counter.innerText=`${Math.ceil(current+increment)}`;
-
-setTimeout(update,20);
-
-}
-
-else{
-
-counter.innerText=target;
-
-}
-
-};
-
-update();
+alert("AI assistant feature coming soon.");
 
 });
